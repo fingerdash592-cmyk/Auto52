@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на обслуживание | Автотехцентр 52NN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+                <img src="img/Logo.png" alt="Автотехцентр 52NN" class="logo-img">
+                <h1>Автотехцентр 52NN</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#services">Услуги</a></li>
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="index.html#advantages">Преимущества</a></li>
+                <li><a href="index.html#reviews">Отзывы</a></li>
+                <li><a href="index.html#map">Карта</a></li>
+                <li><a href="Reg.html">Запись</a></li>
+                <li><a href="vacancy.html">Вакансии</a></li>
+                <li><a href="index.html#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero-video-section">
+    <video class="hero-video-bg" autoplay muted playsinline>
+        <source src="img/ss2.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+    <div class="hero-video-container">
+        <a href="Reg.html#booking" class="hero-btn-main">Записаться на обслуживание</a>
+    </div>
+</section>
+
+
+<!-- Секция записи -->
+<section id = "booking" class="booking">
+    <div class="container">
+        <div class="booking-container">
+            <!-- Форма записи -->
+            <div class="booking-form-container">
+                <h2 class="form-title">Записаться онлайн</h2>
+
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i> Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.
+                </div>
+
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="name">ФИО *</label>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше полное имя" required>
+                        <div class="error-message">Пожалуйста, введите ваше имя</div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                            <div class="error-message">Пожалуйста, введите корректный номер телефона</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com">
+                            <div class="error-message">Пожалуйста, введите корректный email</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceType">Тип услуги *</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">Выберите услугу</option>
+                            <option value="diagnostics">Диагностика</option>
+                            <option value="maintenance">Техническое обслуживание</option>
+                            <option value="engine">Ремонт двигателя</option>
+                            <option value="suspension">Ремонт ходовой части</option>
+                            <option value="brakes">Постгарантийное техническое обслуживание от 8000р</option>
+                            <option value="electrics">Капитальный ремонт двигателя от 25000р</option>
+                            <option value="body">Кузовной ремонт от 5000р</option>
+                            <option value="other">Другое</option>
+                        </select>
+                        <div class="error-message">Пожалуйста, выберите тип услуги</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="problemDescription">Описание
+
+                            проблемы или пожелания</label>
+                        <textarea id="problemDescription" name="problemDescription" rows="4" placeholder="Опишите проблему с вашим автомобилем или ваши пожелания по обслуживанию"></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">Я согласен на обработку данных</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+                </form>
+            </div>
+
+            <!-- Информация о записи -->
+            <div class="booking-info">
+                <h2 class="info-title">Почему записываться онлайн удобно?</h2>
+
+                <div class="info-list">
+                    <div class="info-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <div>
+                            <h3>Гарантированное время</h3>
+                            <p>Мы заранее подготовимся к вашему визиту и выделим необходимое время для вашего автомобиля.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-user-tie"></i>
+                        <div>
+                            <h3>Персональный подход</h3>
+                            <p>Мы изучим вашу заявку заранее и подготовим оптимальное решение для вашего автомобиля.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-list">
+                    <h3>Популярные услуги</h3>
+                    <ul>
+                        <li>Замена моторного масла и полное техобслуживание</li>
+                        <li>Шиномонтаж и балансировка колес</li>
+                        <li>Регулировка развал-схождения колес</li>
+                        <li>Ремонт двигателя</li>
+                        <li>Кузовной ремонт</li>
+                        <li>Диагностика</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Шаги записи -->
+<section class="steps">
+    <div class="container">
+        <h2 class="section-title">Как происходит запись</h2>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Заполните заявку</h3>
+                <p>Заполните простую форму записи онлайн с указанием ваших контактных данных и информации об автомобиле</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Визит в сервис</h3>
+                <p>Приезжайте в назначенное время - мы будем готовы к вашему визиту и начнем работу сразу</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3  </div>
+                <h3>Качественный ремонт</h3>
+                <p>Мы выполним все работы качественно и в оговоренные сроки, с гарантией на все виды услуг</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="img/Logo.png" alt="Автотехцентр 52NN" class="logo-img">
+                    <h1>Автотехцентр 52NN</h1>
+                </div>
+                <p>Ремонт. Обслуживание. Поддержка.</p>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h3>Контакты</h3>
+                <ul>
+                    <li><a>+7 (908) 161-46-93</a></li>
+                    <li><a>Вторчермета 1Г корп. 1/2, Нижний Новгород</a></li>
+                    <li><a>Пн-Пт: 09:00 — 19:00</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Связаться с нами</h3>
+                <div class="social-links">
+                    <a href="https://vk.com/avtoservis52nn" target="_blank" title="Мы ВКонтакте">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="https://t.me/avtotehcentr52NN" target="_blank" title="Наш Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="tel:+7 (908) 161-46-93" title="Позвонить нам">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Создано WebArtStudio по заказу Автотехцентр 52NN. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+<script>
+    // Ждем полной загрузки DOM
+    document.addEventListener('DOMContentLoaded', function() {
+        const bookingForm = document.getElementById('bookingForm');
+        const phoneInput = document.getElementById('phone');
+        
+        // Проверяем, существуют ли элементы перед работой с ними
+        if (!bookingForm) {
+            console.error('Форма bookingForm не найдена!');
+            return;
+        }
+        
+        if (!phoneInput) {
+            console.error('Поле phone не найдено!');
+        }
+
+        // Форма записи
+        bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Простая валидация формы
+            let isValid = true;
+            const requiredFields = this.querySelectorAll('[required]');
+
+            requiredFields.forEach(field => {
+                const formGroup = field.closest('.form-group');
+                if (!formGroup) {
+                    console.warn('form-group не найден для поля:', field);
+                    return;
+                }
+                
+                if (!field.value.trim()) {
+                    formGroup.classList.add('error');
+                    isValid = false;
+                } else {
+                    formGroup.classList.remove('error');
+                }
+
+                // Специальная валидация для email
+                if (field.type === 'email' && field.value.trim()) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(field.value)) {
+                        formGroup.classList.add('error');
+                        isValid = false;
+                    }
+                }
+
+                // Специальная валидация для телефона
+                if (field.type === 'tel' && field.value.trim()) {
+                    const phoneRegex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+                    if (!phoneRegex.test(field.value.replace(/\s/g, ''))) {
+                        formGroup.classList.add('error');
+                        isValid = false;
+                    }
+                }
+            });
+
+            if (isValid) {
+                // Показываем индикатор загрузки
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправка...';
+                submitBtn.disabled = true;
+
+                // Отправка данных на сервер
+                const formData = new FormData(this);
+                
+                fetch('process_booking.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Успешная отправка
+                        const successMessage = document.getElementById('successMessage');
+                        if (successMessage) {
+                            successMessage.style.display = 'block';
+                            successMessage.textContent = data.message;
+                        }
+                        this.reset();
+
+                        // Скрываем сообщение об успехе через 5 секунд
+                        setTimeout(() => {
+                            if (successMessage) {
+                                successMessage.style.display = 'none';
+                            }
+                        }, 5000);
+                    } else {
+                        // Ошибки валидации
+                        if (data.errors) {
+                            alert('Ошибки заполнения формы:\n' + data.errors.join('\n'));
+                        } else {
+                            alert(data.message || 'Произошла ошибка при отправке формы');
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Произошла ошибка при отправке формы');
+                })
+                .finally(() => {
+                    // Восстанавливаем кнопку
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
+            }
+        });
+
+        // Убираем сообщения об ошибках при вводе
+        const formInputs = document.querySelectorAll('#bookingForm input, #bookingForm select, #bookingForm textarea');
+        formInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                const formGroup = this.closest('.form-group');
+                if (formGroup) {
+                    formGroup.classList.remove('error');
+                }
+            });
+        });
+
+        // Маска для телефона (только если поле существует)
+        if (phoneInput) {
+            phoneInput.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+
+                if (value.startsWith('7') || value.startsWith('8')) {
+                    value = value.substring(1);
+                }
+
+                let formattedValue = '+7 (';
+
+                if (value.length > 0) {
+                    formattedValue += value.substring(0, 3);
+                }
+                if (value.length > 3) {
+                    formattedValue += ') ' + value.substring(3, 6);
+                }
+                if (value.length > 6) {
+                    formattedValue += '-' + value.substring(6, 8);
+                }
+                if (value.length > 8) {
+                    formattedValue += '-' + value.substring(8, 10);
+                }
+
+                e.target.value = formattedValue;
+            });
+        }
+    });
+</script>
+</body>
+</html>

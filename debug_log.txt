@@ -1,0 +1,24 @@
+2025-11-13 09:35:58 - Начало обработки
+✅ Подключение к БД успешно
+📝 Получены данные: Юдин Михаил Сергеевич, +7 (910) 387-07-70, maintenance
+🔧 SQL запрос: INSERT INTO bookings (name, phone, email, service_type, problem_description, agree) 
+            VALUES (:name, :phone, :email, :service_type, :problem_description, :agree)
+✅ Данные сохранены! ID записи: 5
+🏁 Конец обработки
+
+2025-11-13 09:38:05 - Начало обработки
+✅ Подключение к БД успешно
+📝 Получены данные: ПИ1 Юдин Михаил , +7 (910) 387-07-70, engine
+🔧 SQL запрос: INSERT INTO bookings (name, phone, email, service_type, problem_description, agree) 
+            VALUES (:name, :phone, :email, :service_type, :problem_description, :agree)
+✅ Данные сохранены! ID записи: 6
+🏁 Конец обработки
+
+2025-11-13 09:43:30 - Начало обработки
+✅ Подключение к БД успешно
+📝 Получены данные: ПИ1 Юдин Михаил , +7 (910) 387-07-70, maintenance
+🔧 SQL запрос: INSERT INTO bookings (name, phone, email, service_type, problem_description, agree) 
+            VALUES (:name, :phone, :email, :service_type, :problem_description, :agree)
+✅ Данные сохранены! ID записи: 7
+🏁 Конец обработки
+

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вакансии | Автотехцентр 52NN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+                <img src="img/Logo.png" alt="Автотехцентр 52NN" class="logo-img">
+                <h1>Автотехцентр 52NN</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#services">Услуги</a></li>
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="index.html#advantages">Преимущества</a></li>
+                <li><a href="index.html#reviews">Отзывы</a></li>
+                <li><a href="index.html#map">Карта</a></li>
+                <li><a href="Reg.html">Запись</a></li>
+                <li><a href="vacancy.html">Вакансии</a></li>
+                <li><a href="index.html#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Заголовок страницы -->
+<section class="page-header">
+    <div class="container">
+        <h1>Вакансии</h1>
+        <p>Присоединяйтесь к нашей команде профессионалов</p>
+    </div>
+</section>
+
+<!-- Секция вакансий -->
+<section class="vacancies">
+    <div class="container">
+        <div class="vacancy-card">
+            <div class="vacancy-header">
+                <h2>Автослесарь</h2>
+                <div class="vacancy-salary">от 100 000 руб.</div>
+            </div>
+
+            <div class="vacancy-content">
+                <div class="vacancy-section">
+                    <h3><i class="fas fa-tasks"></i> Обязанности:</h3>
+                    <ul>
+                        <li>Ремонт автомобилей</li>
+                        <li>Диагностика неисправностей</li>
+                        <li>Техническое обслуживание</li>
+                        <li>Замена узлов и агрегатов</li>
+                        <li>Работа с электрооборудованием автомобиля</li>
+                    </ul>
+                </div>
+
+                <div class="vacancy-section">
+                    <h3><i class="fas fa-user-check"></i> Требования:</h3>
+                    <ul>
+                        <li>Опыт работы от 3 лет</li>
+                        <li>Желание работать и развиваться</li>
+                        <li>Знание устройства автомобиля</li>
+                        <li>Ответственность и внимательность</li>
+                        <li>Умение работать в команде</li>
+                    </ul>
+                </div>
+
+                <div class="vacancy-section">
+                    <h3><i class="fas fa-handshake"></i> Условия:</h3>
+                    <ul>
+                        <li>График работы с 9:00 до 19:00 (сб, вс - выходной)</li>
+                        <li>Заработная плата от 100 000 руб. Ограничений нет</li>
+                        <li>Выплаты 2 раза в месяц</li>
+                        <li>Официальное трудоустройство</li>
+                        <li>Обучение и повышение квалификации</li>
+                        <li>Комфортные условия труда</li>
+                        <li>Современное оборудование и инструменты</li>
+                    </ul>
+                </div>
+
+                <div class="vacancy-actions">
+                    <a href="#application-form" class="btn btn-primary">Откликнуться на вакансию</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="vacancy-benefits">
+            <h2 class="text-center">Почему работают у нас</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Достойная зарплата</h3>
+                    <p>Конкурентный уровень дохода, регулярные выплаты и премии за качественную работу</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Официальное трудоустройство</h3>
+                    <p>Полный социальный пакет, соблюдение ТК РФ, оплачиваемый отпуск и больничные</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Дружный коллектив</h3>
+                    <p>Работа в команде профессионалов, готовых помочь и поделиться опытом</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Современное оборудование</h3>
+                    <p>Работа на профессиональном оборудовании с использованием качественных материалов</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Форма отклика на вакансию -->
+<section class="application" id="application-form">
+    <div class="container">
+        <div class="application-container">
+            <div class="application-form-container">
+                <h2 class="form-title">Откликнуться на вакансию</h2>
+
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i> Спасибо! Ваше резюме отправлено. Мы свяжемся с вами в ближайшее время.
+                </div>
+
+                <form class="application-form" id="applicationForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="applicantName">ФИО *</label>
+                        <input type="text" id="applicantName" name="applicantName" placeholder="Введите ваше полное имя" required>
+                        <div class="error-message">Пожалуйста, введите ваше имя</div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applicantPhone">Телефон *</label>
+                            <input type="tel" id="applicantPhone" name="applicantPhone" placeholder="+7 (___) ___-__-__" required>
+                            <div class="error-message">Пожалуйста, введите корректный номер телефона</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="applicantEmail">Email</label>
+                            <input type="email" id="applicantEmail" name="applicantEmail" placeholder="your@email.com">
+                            <div class="error-message">Пожалуйста, введите корректный email</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicantExperience">Опыт работы (лет) *</label>
+                        <input type="number" id="applicantExperience" name="applicantExperience" min="0" max="50" placeholder="3" required>
+                        <div class="error-message">Пожалуйста, укажите ваш опыт работы</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicantSpecialization">Специализация *</label>
+                        <select id="applicantSpecialization" name="applicantSpecialization" required>
+                            <option value="">Выберите специализацию</option>
+                            <option value="mechanic">Автомеханик</option>
+                            <option value="electrician">Автоэлектрик</option>
+                            <option value="diagnostician">Диагност</option>
+                            <option value="painter">Маляр</option>
+                            <option value="other">Другое</option>
+                        </select>
+                        <div class="error-message">Пожалуйста, выберите специализацию</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicantMessage">Дополнительная информация</label>
+                        <textarea id="applicantMessage" name="applicantMessage" rows="4" placeholder="Расскажите о себе, своих навыках и опыте"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicantResume">Резюме (PDF, DOC, DOCX)</label>
+                        <input type="file" id="applicantResume" name="applicantResume" accept=".pdf,.doc,.docx">
+                        <div class="file-hint">Максимальный размер файла: 5MB</div>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="privacyAgree" name="privacyAgree" required>
+                        <label for="privacyAgree">Я согласен на обработку персональных данных</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Отправить отклик</button>
+                </form>
+            </div>
+
+            <div class="application-info">
+                <h2 class="info-title">Что дальше?</h2>
+
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h3>Отправка заявки</h3>
+                            <p>Заполните форму и прикрепите ваше резюме. Мы рассмотрим вашу кандидатуру в течение 2 рабочих дней.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h3>Собеседование</h3>
+                            <p>Если ваша кандидатура нас заинтересует, мы пригласим вас на собеседование с руководителем отдела.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h3>Испытательный срок</h3>
+                            <p>После успешного собеседования мы предложим вам пройти испытательный срок для знакомства с коллективом и рабочими процессами.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="step-number">4</div>
+                        <div>
+                            <h3>Трудоустройство</h3>
+                            <p>По окончании испытательного срока мы оформим официальное трудоустройство и вы станете частью нашей команды.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-prompt">
+                    <h3>Остались вопросы?</h3>
+                    <p>Свяжитесь с нами по телефону:</p>
+                    <a href="tel:+79081614693" class="contact-phone">+7 (908) 161-46-93</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="img/Logo.png" alt="Автотехцентр 52NN" class="logo-img">
+                    <h1>Автотехцентр 52NN</h1>
+                </div>
+                <p>Ремонт. Обслуживание. Поддержка.</p>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h3>Контакты</h3>
+                <ul>
+                    <li><a>+7 (908) 161-46-93</a></li>
+                    <li><a>Вторчермета 1Г корп. 1/2, Нижний Новгород</a></li>
+                    <li><a>Пн-Пт: 09:00 — 19:00</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Связаться с нами</h3>
+                <div class="social-links">
+                    <a href="https://vk.com/avtoservis52nn" target="_blank" title="Мы ВКонтакте">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="https://t.me/avtotehcentr52NN" target="_blank" title="Наш Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="tel:+7 (908) 161-46-93" title="Позвонить нам">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Создано WebArtStudio по заказу Автотехцентр 52NN. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Форма отклика на вакансию
+    document.getElementById('applicationForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Простая валидация формы
+        let isValid = true;
+        const requiredFields = this.querySelectorAll('[required]');
+
+        requiredFields.forEach(field => {
+            const formGroup = field.closest('.form-group');
+            if (!field.value.trim()) {
+                formGroup.classList.add('error');
+                isValid = false;
+            } else {
+                formGroup.classList.remove('error');
+            }
+
+            // Специальная валидация для email
+            if (field.type === 'email' && field.value.trim()) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(field.value)) {
+                    formGroup.classList.add('error');
+                    isValid = false;
+                }
+            }
+
+            // Специальная валидация для телефона
+            if (field.type === 'tel' && field.value.trim()) {
+                const phoneRegex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+                if (!phoneRegex.test(field.value.replace(/\s/g, ''))) {
+                    formGroup.classList.add('error');
+                    isValid = false;
+                }
+            }
+        });
+
+        if (isValid) {
+            // В реальном приложении здесь был бы AJAX-запрос к серверу
+            document.getElementById('successMessage').style.display = 'block';
+            this.reset();
+
+            // Скрываем сообщение об успехе через 5 секунд
+            setTimeout(() => {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 5000);
+        }
+    });
+
+    // Убираем сообщения об ошибках при вводе
+    const formInputs = document.querySelectorAll('#applicationForm input, #applicationForm select, #applicationForm textarea');
+    formInputs.forEach(input => {
+        input.addEventListener('input', function() {
+            this.closest('.form-group').classList.remove('error');
+        });
+    });
+
+    // Маска для телефона
+    const phoneInput = document.getElementById('applicantPhone');
+    phoneInput.addEventListener('input', function(e) {
+        let value = e.target.value.replace(/\D/g, '');
+
+        if (value.startsWith('7') || value.startsWith('8')) {
+            value = value.substring(1);
+        }
+
+        let formattedValue = '+7 (';
+
+        if (value.length > 0) {
+            formattedValue += value.substring(0, 3);
+        }
+        if (value.length > 3) {
+            formattedValue += ') ' + value.substring(3, 6);
+        }
+        if (value.length > 6) {
+            formattedValue += '-' + value.substring(6, 8);
+        }
+        if (value.length > 8) {
+            formattedValue += '-' + value.substring(8, 10);
+        }
+
+        e.target.value = formattedValue;
+    });
+</script>
+</body>
+</html>
+</body>
+</html>
